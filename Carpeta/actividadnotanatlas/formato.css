@@ -1,0 +1,130 @@
+body { /*El reset*/
+    margin: 0;   /* Quita los 8px de basura */
+    padding: 0;  /* Por si algún navegador raro le puso padding en vez de margin */
+}
+.entrada-menu{ /*Fondo negrito y colores*/
+    position: sticky;   /* Para que el menu se vea */
+    top: 0; /* Se pega al borde superior */
+    z-index: 1000;    /* Para que pase POR ENCIMA de todo el contenido */
+    background-color: rgb(26, 26, 26); /* Importante ponerle fondo o se verá transparente */
+    color:rgb(228, 227, 227); /*El color de la letra*/
+}
+.entrada-menu a {
+    color: rgb(228, 227, 227); /* El mismo gris claro */
+    text-decoration: none;    /* Quita la línea subrayada */
+    margin-left: 5px;        /* Espacio entre cada link */
+}
+.entrada-menu nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Manda cada cosa a una esquina*/
+    padding: 10px;
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.menu-derecha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contenedor-principal {
+    max-width: 1150px;  /*Dist margen*/
+    margin: 0px auto;   /*Margen 0 arriba/abajo y max-widht de lado*/
+    font-family: "Ek Mukta", sans-serif;    /*Tipo de letra*/
+    padding: 0 20px; /*Dist margen pal cel*/
+}
+.ElAbout {  /*Tambien se puede asi*/
+    font-size: 42px;
+    text-align: center; /*Alineacion*/
+    font-weight:200;    /*Negritas*/
+    color: #303030;
+}
+.contenedor-principal h2{
+    font-size: 28px;
+    color: #211f1f;
+}
+.contenedor-principal p {
+    white-space: pre-line; /*Para ver los enters*/
+    font-size: 19px;    /*Tamaños*/
+    line-height: 1.7;   /*Interlineado*/
+    margin-top: -30px;  /*Margen superior*/
+    margin-bottom: 50px;    /*Margen inferior*/
+    color: #8c8c8c;
+}
+.contenedor-principal-imagenes {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    display: flex; /*Pone en orden las imagenes*/
+    gap: 24px;  /*Separacion entre imagenes*/
+    text-align: center;
+}
+.contenedor-principal-redes {
+    margin-bottom: 90px;
+}
+footer {
+    background-color: rgb(228, 227, 227);
+    white-space: pre-line;
+    font-family:"Ek Mukta", sans-serif;
+    position: relative; /*Se mantiene en su posicion*/
+    z-index: 2000; /*Se sobrepone de todo*/
+}
+.cierre {
+    max-width: 1150px; 
+    margin: 29px auto;
+}
+.cierre-orangotango {
+    display: flex;
+    gap: 68px;
+}
+
+.cierre-redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.email {
+    display: flex;
+    gap: 11px;
+}
+.email input[type="text"] {
+    border: 1px solid rgb(208, 208, 208); /*Borde del cuadro de texto*/
+    border-radius: 5px 0 0 5px; /* Redondeado solo a la izquierda */
+    font-size: 16px;
+    width: 150px;
+}
+.email button {
+    padding: 12px 25px;
+    background-color: rgb(40, 80, 160);; /* El azul de la imagen */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Redondeado solo a la derecha */
+    font-family: "Ek Mukta", sans-serif;
+}
+.support {
+    display: flex;
+    gap: 110px;
+}
+.also-supported {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.also-supported a {
+    text-decoration: none;    /* Quita la línea subrayada */
+    margin-left: 5px;        /* Espacio entre cada link */
+    color: black;
+    font-weight: 700;
+}
+.legal {
+    display: flex;
+    gap: 100px;
+}
+.legal-imagenes {
+    display: flex;
+    gap: 5px;
+}
+
+/* Claramente es por el flex porque solo con el cierre h3 ya funciona pero como no se como funciona pues es eso porque ya de por si mueve la interfaz entonces busquemos como solucionarlo o como hacer para que toda la interfaz tenga ese formato sin afectar que arruine el color*/
