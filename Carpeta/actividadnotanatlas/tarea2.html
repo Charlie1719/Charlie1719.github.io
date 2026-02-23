@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea 2</title>
+        <link rel="stylesheet" href="tarea2c.css">
+    </head>
+    <body>
+        <marquee>Se reporta que esta tarea esta tan mal hecha como se pidio que se merece su apropiado 10.      Un saludo y buen dia Crack 😉</marquee>
+        <div style="display: flex; background-color: rgb(189, 189, 45);">
+            <h1 id="Primer-titulo">HTML</h1>
+            <style>
+                h1 {
+                    border: 30px outset #da8516;
+                }
+            </style>
+            <div class="Primera-parte">
+                <h2 id="Primer-subtitulo">Introducción</h2>
+                <h3>¿Qué es HTML?</h3>
+                <p>Basicamente es un lenguaje de programacion para de estructurar un documento como por ejemplo páginas web.</p>
+                <h3>Explicación de Head and Body:</h3>
+                <p>En html el head o cabeza es un contenedor para metadatos que permiten que la pagina se pueda encontrar en el buscador, mientras que el body o cuerpo es el almacen principal de la pagina en donde se va a almacenar la información.</p>
+                <h2 style="color: bisque; text-align: center;">Tags Básicos</h2>
+                <h3>Explicación de section, article, aside, header, footer tag:</h3>
+                <p>Header es para la sección introductoria del documento, section es un contenedor de algo mas grande que sirve para almacenar, article igualmente es un apartado que sirve para contener texto, pero este es independiente ya que no importa en que sección lo encuentres tiene sentido por si misma, aside es información de apoyo que no forma parte de lo principal, footer es para el pie de la página, derechos, contactos, entre otros.</p>
+            </div>
+        </div>
+        <div class="Imagen">
+        <img src="images/homero.gif" auto>
+        </div>
+        <div style="background-color: #56360b;">
+            <style>
+                h3 {
+                    text-decoration: underline wavy rgb(123, 143, 8);
+                    color:rgb(152, 255, 255);
+                }
+                h2 {
+                    color:rgb(197, 15, 57);
+                }
+            </style>
+            <h1 style="text-align: end; color:honeydew">CSS</h1>
+            <h2 style="background-color: rgb(141, 127, 98);">Introducción</h2>
+            <h3>¿Qué es CSS?</h3>
+            <p>CSS es lo que nos permite darle estilo a nuestro documento, desde el tipo de letra, color de fondo, orden y más.</p>
+            <h3 style="text-align: center;">¿Cuál es el proposito de CSS?</h3>
+            <p>Justamente su proposito es ofrecer a nuestro documento la estructura que nosotros deseemos y darnos ciertas funciones para que sirvan por ejemplo botones o cuadros de texto.</p>
+            <h3 style="text-align: right;">¿Cuáles son las 3 formas de vincular?</h3>
+            <p>Las tres maneras de vincular nuestro estilo al documento son:</p>
+            <p>1.-Crear un archivo .css en HEAD con el cual con la funcion link rel="relaciondelarchivo", href="nombredelarchivo.css" pueda otorgar el estilo al archivo.</p>
+            <p>2.-Dentro del programa HTML podemos directamente escribir style dentro de los corchetes angulares de un contenedor ya sea header o el texto y ahi añadir las caracteristicas necesarias que va a tener el contenedor.</p>
+            <p>3.-Existe la funcion " style > la cual dentro antes de cerrarla con /style > escribes el contenedor a editar y seguido corchetes y dentro de los corchetes ya las caracteristicas a añadir."</p>
+            <h3 style="border: 3px outset #b316da">¿Qué es un selector?¿Qué es una regla de CSS?</h3>
+            <p>El selector es el identificador de elementos en HTML, al cual le queremos aplicar un estilo. </p>
+            <h2 style="border-left: 400px solid rgb(23, 85, 34); border-right: 400px solid rgb(23, 85, 34); text-align: start;">CSS Básico</h2>
+            <h3>Tag selector</h3>
+            <p>Este es un selector pero para identificar especificamente etiquetas como h3, p, a, etc. </p>
+            <h3>Class selector</h3>
+            <p>Se pueden crear clases para facilitar la accesibilidad a ciertas etiquetas o contenedores las cuales identificamos con el class selector.</p>
+            <h3 style="text-align: right;">ID selector</h3>
+            <p>Este reconoce elementos individuales que tengan un id especifico.</p>
+            <h3>¿Qué es una clase e id?¿Cómo se relacionan con CSS?</h3>
+            <p>Ambos son atributos de identidad, pero su diferencia principal radica en su alcance: el ID es un identificador único, mientras que la Clase es un identificador grupal.</p>
+            <h3 style="text-align: center;">Explica el modelo de cajas y muestra un ejemplo.</h3>
+            <p>El modelo de cajas a mí me gusta definirlo como que el html es un suelo, sobre en el cual podemos colocar diferentes elementos representados como cajas. En este sistema content o contenido define dónde queremos o cómo queremos centrar nuestra caja en el suelo, sí cargado a la izquierda cargado o a la derecha o en medio. El padding es como un relleno interno de la caja para acomodar lo que está dentro a nuestro gusto. El borde representa el grosor de la caja y por último el margen es el espacio vacío en el suelo que rodea la caja, funcionando como una distancia de seguridad que la separa de las paredes de la habitación o de otras cajas vecinas.</p>
+            <h3>Explica los media queries</h3>
+            <p style="border: 3px outset #546313">Los media nos permiten adaptar nuestro sitio web a cualquier dispositivo ya que todos los dispositivos tienen pantallas diferentes, la tv, la tiene más grande el celular, chiquita, la computadora la tiene como un tamaño medio entonces si queremos que nuestra página se vea bien en todas estas plataformas, utilizamos estas condiciones en nuestro CSS.</p>
+            <h2 style="border-left: 400px solid rgb(23, 63, 85); border-right: 400px solid rgb(23, 63, 85); text-align: end;">Layout CSS</h2>
+            <h3 style="text-align: center;">Explica el display:grid</h3>
+            <p>El grip nos permite dividir nuestro documento en un tablero para acomodar nuestras cajas a nuestro gusto del tablero.</p>
+            <h3 style="text-align: right;">Explica el display:flex</h3>
+            <p style="border: 3px outset #16da16">El display: flex ayuda principalmente a alinear nuestras cajas en un solo eje (ya sea una fila o una columna). Permite que haya varios elementos en una misma línea y que estos se adapten al espacio. Sin embargo, si no se configura el 'envolvedor' (flex-wrap), los elementos pueden intentar mantenerse en una sola fila hasta salirse de la pantalla. Igualmente, si se alinean verticalmente, pueden extenderse tanto que hagan la página muy larga si no se controla el tamaño del contenedor.</p>
+            </div>
+    </body>
+</html>

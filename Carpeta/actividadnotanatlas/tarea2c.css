@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(146, 146, 142);
+    /* Gracias Gemini descubri que se puede cambiar el cursor del usuario*/
+    /* La primera vez se intento con cursor: url('images/caquita.png'), auto; pero no funcionaba porque las imagenes descargadas eran muy grandes*/
+    /* Por ello se uso SVG que basicamente dibuja formas*/
+    /* "data:image/svg+xml" dice que la imagen que se va a cargar va a ser SVG*/
+    /* "utf8" esta es la codificación para el navegador*/
+    /* "<svg xmlns='http://www.w3.org/2000/svg'" esta parte le indica a nuestro navegador que es SVG y abre el lienzo"*/
+    /* Al final solo configura el tamaño y se le indica los pixeles validos para el mouse y que lo sustiya por el emoji de la caca*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' style='font-size:24px'><text y='50%'>💩</text></svg>"), auto;    
+}
+.Imagen{
+    text-align: center;
+    background-color: rgb(24, 70, 6);
+    border: 100px double rgb(51, 83, 153);
+}
+#Primer-titulo {
+    text-align: right;
+    color:rgb(133, 15, 113);
+}
+#Primer-subtitulo {
+    text-align: center;
+    color: bisque;
+}
+.Primera-parte p {
+    text-shadow: 1px 1px 0px red;
+}
+.Primera-parte h3 {
+    text-align: right;
+    color:rgb(45, 57, 189)
+}
