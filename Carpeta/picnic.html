@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página con Picnic CSS</title>
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  
+  <style>
+    .flex.demo{
+     margin: .2em 0;
+     background: #2ecc40;
+     text-align: center;
+    }
+    .flex.demo div {
+      border:.1em solid pink;
+    }
+
+  </style>
+</head>
+<body>
+  
+    <div class="tabs two">
+        <input id='tab-1' type='radio' name='tabgroupB' checked />
+        <label class="pseudo button toggle" for="tab-1">¿Cómo fue tu vivencia el domingo?</label>
+        <input id='tab-2' type='radio' name='tabgroupB'>
+        <label class="pseudo button toggle" for="tab-2">En el contexto actual: ¿Qué te gustaría que cambiara?</label>
+        <div class="row">
+            <div>
+            <p>Me asuste demasiado ya que andaba afuera y vi 2 coches quemados y una gasolineria siendo apagada por bomberos.</p>
+            </div>
+
+            <div>
+            <p>Que todo vuelva a la normalidad e incluso que mejore la seguridad en los oxxos para que no los quemen.</p>
+            </div>
+        </div>
+    </div>
+
+  <button id="musico">Ve por mi artista favorito</button>
+  <button class="success">Ver por otro artista favorito</button>
+  <div class="flex two four-1200 demo">
+    <div id="bio">1</div>
+    <div id="imagen">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  
+  </div>
+
+    <script>
+    
+    let biografia;
+
+    document.addEventListener("DOMContentLoaded", function() {
+         // biografia = document.getElementById();
+         // document.getElementById().addEventListener("click", );
+          //console.log("DOM listo");
+    });
+
+
+     async function obtenerJSON() {
+       // const respuesta = await fetch('https://www.theaudiodb.com/api/v1/json/123/search.php?s=');  
+       // const datos = await respuesta.json();
+       // console.log(datos);
+
+        const textoArtista = document.createElement('p');
+        //textoArtista.textContent = 
+        //biografia.appendChild(textoArtista);
+
+        //const imagenArtista= document.createElement('');
+        
+        //imagenArtista.setAttribute('src', '');
+     }
+
+    </script>
+</body>
+</html>
