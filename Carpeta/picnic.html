@@ -38,7 +38,7 @@
     </div>
 
   <button id="musico">Ve por mi artista favorito</button>
-  <button class="success">Ver por otro artista favorito</button>
+  <button id="success">Ver por otro artista favorito</button>
   <div class="flex two four-1200 demo">
     <div id="bio">1</div>
     <div id="imagen">2</div>
@@ -56,26 +56,44 @@
     let biografia;
 
     document.addEventListener("DOMContentLoaded", function() {
-         // biografia = document.getElementById();
-         // document.getElementById().addEventListener("click", );
+         biografia = document.getElementById("bio");
+         document.getElementById("musico").addEventListener("click",obtenerJSON );
+         document.getElementById("success").addEventListener("click",obtenerJSON2 );
           //console.log("DOM listo");
     });
 
 
      async function obtenerJSON() {
-       // const respuesta = await fetch('https://www.theaudiodb.com/api/v1/json/123/search.php?s=');  
-       // const datos = await respuesta.json();
-       // console.log(datos);
+        const respuesta = await fetch('https://www.theaudiodb.com/api/v1/json/123/search.php?s=Bruno_Mars');  
+        const datos = await respuesta.json();
+        console.log(datos);
 
         const textoArtista = document.createElement('p');
-        //textoArtista.textContent = 
-        //biografia.appendChild(textoArtista);
+        textoArtista.textContent = datos.artists[0].strBiographyDE;
+        biografia.appendChild(textoArtista);
 
-        //const imagenArtista= document.createElement('');
+        const imagenArtista= document.createElement('img');
         
-        //imagenArtista.setAttribute('src', '');
+        imagenArtista.setAttribute('src', 'https://r2.theaudiodb.com/images/media/artist/fanart/svxtrs1347284582.jpg');
+        imagen = document.getElementById("imagen");
+        imagen.appendChild(imagenArtista);
      }
 
+     async function obtenerJSON2() {
+        const respuesta = await fetch('https://www.theaudiodb.com/api/v1/json/123/search.php?s=Björk');  
+        const datos = await respuesta.json();
+        console.log(datos);
+
+        const textoArtista = document.createElement('p');
+        textoArtista.textContent = datos.artists[0].strBiographyDE;
+        biografia.appendChild(textoArtista);
+
+        const imagenArtista= document.createElement('img');
+        
+        imagenArtista.setAttribute('src', 'https://r2.theaudiodb.com/images/media/artist/fanart/rq2rtq1729177322.jpg');
+        imagen = document.getElementById("imagen");
+        imagen.appendChild(imagenArtista);
+     }
     </script>
 </body>
 </html>
